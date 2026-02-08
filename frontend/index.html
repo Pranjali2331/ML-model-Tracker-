@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Period Tracker</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Period Predictor</h1>
+    <p class="subtitle">ML-based menstrual cycle prediction</p>
+
+    <div class="card">
+      <input type="number" id="age" placeholder="Age" />
+      <input type="date" id="last_period" />
+
+      <div class="row">
+        <input type="number" id="avg_cycle" placeholder="Avg Cycle Length (days)" />
+        <input type="number" id="period_duration" placeholder="Period Duration (days)" />
+      </div>
+
+      <div class="row">
+        <input type="number" id="sleep" placeholder="Sleep Hours" />
+        <input type="number" id="exercise" placeholder="Exercise / Week" />
+      </div>
+
+      <select id="flow">
+        <option value="">Flow Intensity</option>
+        <option value="0">Light</option>
+        <option value="1">Medium</option>
+        <option value="2">Heavy</option>
+      </select>
+
+      <select id="regularity">
+        <option value="">Cycle Regularity</option>
+        <option value="0">Regular</option>
+        <option value="1">Irregular</option>
+      </select>
+
+      <button id="predictBtn">Predict Period</button>
+
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
